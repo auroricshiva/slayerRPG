@@ -79,9 +79,11 @@ class Actions(object):
 		if m_hp <= 0:
 			print("You defeated the %s!" % m_name)
 			player.hp = p_hp
-			return True
+			return 'win'
 		elif p_hp <= 0:
-			return False
+			return 'death'
+		else:
+			return 'flee'
 	
 	def hit(self, type):
 		""" Determines whether or not an attack hits or misses """

@@ -92,14 +92,16 @@ class Plains(Save):
 			
 			player = self.load()
 			goblin = Monster('goblin')
-			win = player.actions.battle(player, goblin)
+			result = player.actions.battle(player, goblin)
 			
-			if win:
+			if result == 'win':
 				print("\n\"Thank you for your help!\"")
 				input()
 				return 'parrington'
-			else:
+			elif result == 'death':
 				return 'death'
+			else:
+				return 'parrington'
 			
 		elif help == 'N' or help == 'n':
 			print("As you leave the farmer to die, you feel like a total faggot.")
