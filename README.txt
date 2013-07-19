@@ -1,4 +1,4 @@
-@author Ricky Liang
+@author auroricshiva
 @version 07/19/2013
 
 README
