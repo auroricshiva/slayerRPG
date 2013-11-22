@@ -1,6 +1,8 @@
-@author auroricshiva
-@version 2013/07/19
+Slayer RPG
+==========
+Created by Ricky Liang
+Last updated July 19, 2013
 
 README
---------------------
+-------
 Run maps.py in your terminal to start the game.
